@@ -1,4 +1,4 @@
-package input
+package fileInput
 
 import (
 	"bufio"
@@ -8,7 +8,18 @@ import (
 	"strings"
 )
 
-func GetContentOfFile(filepath string) []string {
+type FileInput interface {
+	GetContentOfFile(string) []string
+}
+
+type fileInput struct {
+}
+
+func NewFileInput() FileInput {
+	return fileInput{}
+}
+
+func (f fileInput) GetContentOfFile(filepath string) []string {
 	fileContent := readFile(filepath)
 	return fileContent
 }
