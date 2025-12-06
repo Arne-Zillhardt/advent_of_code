@@ -10,6 +10,7 @@ import (
 	"github.com/Arne-Zillhardt/advent_of_code/2025/day01/02"
 	"github.com/Arne-Zillhardt/advent_of_code/2025/day02/01"
 	"github.com/Arne-Zillhardt/advent_of_code/2025/day02/02"
+	"github.com/Arne-Zillhardt/advent_of_code/2025/day03/01"
 	"github.com/Arne-Zillhardt/advent_of_code/2025/fileInput"
 )
 
@@ -22,6 +23,7 @@ var puzzles = map[string]Puzzle {
 	"day0102": day0102.NewDay0102(),
 	"day0201": day0201.NewDay0201(),
 	"day0202": day0202.NewDay0202(),
+	"day0301": day0301.NewDay0301(),
 }
 
 func main() {
